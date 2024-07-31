@@ -18,7 +18,7 @@
  * |:----------:|:-----------------------------------------------|
  * | 31/07/2024 | Document creation		                         |
  *
- * @author Francesca Leban (francesca.leban@ingenieria.uner.edu.ar)
+ * @author Francesca Leban (francheleban123@gmail.com)
  *
  */
 
