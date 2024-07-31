@@ -54,7 +54,7 @@ void app_main(void){
 				LedToggle(LED_3);
 			break;
     	}
-	    /*LedToggle(LED_3);*/
+	    //LedToggle(LED_3);
 		vTaskDelay(CONFIG_BLINK_PERIOD / portTICK_PERIOD_MS);
 	}
 }
