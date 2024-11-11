@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Recuperatorio Parcial: Archivo de código fuente C:/Repositorios/Leban_2C_2024/firmware/drivers/microcontroller/inc/analog_io_mcu.h</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Recuperatorio Parcial<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Resolucion examen recuperatorio</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('analog__io__mcu_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">analog_io_mcu.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="analog__io__mcu_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ANALOG_IO_MCU_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ANALOG_IO_MCU_H</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/*================================================================================================</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">    Este driver es un controlador de entrada y salida analógica, proporciona funciones para configurar</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    y manejar las entradas y salidas analógicas de la placa. En otras palabras, proporciona una forma de</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    interactuar con las entradas y salidas analógicas de la placa, permitiendo configurar y leer valores</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    de las entradas analógicas y escribir valores en la salida analógica. Sus principales características y funciones son:</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">    CARACTERISTICAS:</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">        &gt; 4 entradas analógicas (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">        &gt; 1 salida analógica (DAC)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">        &gt; La salida analógica DAC comparte el pin con la entrada analógica CH0</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">        &gt; El driver permite configurar el modo de operación del ADC en modo de lectura única o continua</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    FUNCIONES:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        &gt; AnalogInputInit</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        &gt; AnalogOutputInit</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">        &gt; AnalogInputReadSingle</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">        &gt; AnalogStartContinuous</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">        &gt; AnalogStopContinuous</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">        &gt; AnalogInputReadContinuous</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        &gt; AnalogOutputWrite</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    ESTRUCTURAS DE CONFIGURACIÓN:</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">        &gt; analog_input_config_t</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">=================================================================================================*/</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/*==================[inclusions]=============================================*/</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/*==================[macros]=================================================*/</span></div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#ga4ebdf50515e5d73c58c24fd1491770dc">   52</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="group___analog___i_o.html#ga4ebdf50515e5d73c58c24fd1491770dc">adc_ch</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca839bb189c047995024b04db6c0dbb29f">   53</a></span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca839bb189c047995024b04db6c0dbb29f">CH0</a> = 0,                </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">   54</a></span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a>,                    </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dcae574b39c34bd88c27ea641014831e53a">   55</a></span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dcae574b39c34bd88c27ea641014831e53a">CH2</a>,                    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dcaaee6d12bf63ae430250764aa97e9e429">CH3</a>                     </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">   57</a></span>} <a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a>;</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//--- Enumerado que define los canales de entrada analógica disponibles. Los posibles valores son:</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//---               &gt; CH0 canal 0 - para digital analogico y para analogico digital</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">//---               &gt; CH1 canal 1 - para analogico digital</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//---               &gt; CH2 canal 2 - para analogico digital</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//---               &gt; CH3 canal 3 - para analogico digital</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//--- En este caso la enumeración lleva el nombre de &quot;adc_ch_t&quot; y define los 4 valores constantes </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//    que representan los canales de entrada analógica (ADC) disponibles en el hardware</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//    El &quot;adc_ch_t&quot; se utiliza para hacer que el código sea más legible y fácil de entender, en</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//    lugar de utilizar números mágicos (como 0, 1, 2, 3) para referirse a los canales.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#ga51acd785c14953090a3507d4fa8e5939">   68</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="group___analog___i_o.html#ga51acd785c14953090a3507d4fa8e5939">adc_mode</a> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4">   69</a></span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4">ADC_SINGLE</a>,             </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a2c63a9e4a7bd5a4da1cb97f40f1cb49d">   70</a></span>    <a class="code hl_enumvalue" href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a2c63a9e4a7bd5a4da1cb97f40f1cb49d">ADC_CONTINUOUS</a>,         </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#ga3e4744e022398e776a8dbdd97903a629">   71</a></span>} <a class="code hl_typedef" href="group___analog___i_o.html#ga3e4744e022398e776a8dbdd97903a629">adc_mode_t</a>;</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//--- Enumerado que define los modos de operación del ADC (modos de lectura analógica disponibles).</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//--- Los posibles valores constantes son:</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//---               &gt; ADC_SINGLE: Modo de lectura simple/única del ADC, con valor 0. En este modo,</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//                    el ADC realiza una sola lectura del valor analógico y luego se detiene.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//---               &gt; ADC_CONTINUOUS: Modo de lectura continua del ADC, con valor 1. En este modo,</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//                    el ADC realiza lecturas periódicas del valor analógico hasta que se detenga</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//                    explícitamente.</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//--- La enumeración adc_mode se utiliza para hacer que el código sea más legible y fácil de</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//    entender, en lugar de utilizar números mágicos (como 0 o 1) para referirse a los modos de</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">//    operación.</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group___analog___i_o.html#ga4aa2a4ab86ce00c23035e5cee2e7fc7e">   83</a></span><span class="preprocessor">#define DAC 0               </span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//--- Es 0 porque CH0 es para convertir digital analógico (el único pin de salida analógica)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/*==================[typedef]================================================*/</span></div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="};">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html">   91</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{            </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html#a16d10b35d778a5d4fdbda4d75981d310">   92</a></span>    <a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a> <a class="code hl_variable" href="structanalog__input__config__t.html#a16d10b35d778a5d4fdbda4d75981d310">input</a>;         </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html#a56cce61871ae1c1c5317d84d747f87c1">   93</a></span>    <a class="code hl_typedef" href="group___analog___i_o.html#ga3e4744e022398e776a8dbdd97903a629">adc_mode_t</a> <a class="code hl_variable" href="structanalog__input__config__t.html#a56cce61871ae1c1c5317d84d747f87c1">mode</a>;        </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html#a672985730d2c0cf9105559adc9759a3a">   94</a></span>    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structanalog__input__config__t.html#a672985730d2c0cf9105559adc9759a3a">func_p</a>;           </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html#aad5f5715cb799d57b86e98fe3bf701e1">   95</a></span>    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structanalog__input__config__t.html#aad5f5715cb799d57b86e98fe3bf701e1">param_p</a>;          </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structanalog__input__config__t.html#a25204106348e34dfe9da6ac6e61b08c8">   96</a></span>    uint16_t <a class="code hl_variable" href="structanalog__input__config__t.html#a25204106348e34dfe9da6ac6e61b08c8">sample_frec</a>;   </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <a class="code hl_struct" href="structanalog__input__config__t.html">analog_input_config_t</a>;</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//---Estructura que contiene la configuración para una entrada analógica, los campos son:</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">//---       &gt; input: Canal de entrada analógica &quot;adc_ch_t&quot; (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//---       &gt; mode: Modo de operación del ADC &quot;adc_mode_t&quot; (single read, continuous read)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//---       &gt; func_p: Puntero a la función de callback para cuando se complete la</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//---                 conversión (notificación de fin de lectura) (solo para lectura continua)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//---       &gt; param_p: Puntero a los parámetros de la función de callback (notificación de lectura)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">//---                  (solo para lectura continua) </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">//---       &gt; sample_frec: Frecuencia de muestreo (min: 20kHz - max: 2MHz) (solo para lectura continua)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">/*==================[external data declaration]==============================*/</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/*==================[external functions declaration]=========================*/</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#ga24ce5556aa4682468220b982f151cdfe">AnalogInputInit</a>(<a class="code hl_struct" href="structanalog__input__config__t.html">analog_input_config_t</a> *config);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">//---Inicializa la entrada analógica con la configuración proporcionada</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//---Parámetro: el struct que contiene la configuración &quot;analog_input_config_t&quot;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#gab57399e946247652a096a0e2d3a1b69a">AnalogOutputInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//---Inicializa la salida analógica</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#gab5ae00a35744f407072230979e593fd9">AnalogInputReadSingle</a>(<a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a> channel, uint16_t *value);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">//---Lee el valor de un canal de entrada analógica específico en modo de lectura única</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">//---Parámetros: </span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">//---           &gt; El primer parámetro es el canal (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">//---           &gt; El segunto parámetro es el puntero a la variable donde se guardará el valor leído</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">//                (debemos pasarlo por referencia en nuestro codigo)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">/*=================================================================================================</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">    La &quot;lectura única&quot; también conocida como &quot;lectura simple&quot; se refiere a una operación de lectura</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">    de un canal de entrada analógica que se realiza solo una vez. En otras palabras, cuando se llama</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">    a la función &quot;AnalogInputReadSingle&quot; se realiza una sola lectura del valor del canal de entrada</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">    analógica especificado y devuelve el resultado. No se almacena el valor para futuras lecturas.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">    Por ejemplo, si se llama a AnalogInputReadSingle para leer el valor de un canal de entrada analógica</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">    que está conectado a un sensor de temperatura, el driver leerá el valor actual de la temperatura y lo</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">    devolverá, pero no realizará ninguna lectura adicional ni almacenará el valor para futuras lecturas.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">    En resumen, &quot;lectura única&quot; se refiere a una operación de lectura aislada y única de un canal de</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">    entrada analógica, sin lecturas adicionales ni almacenamiento de valores.</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">    </span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">    A diferencia, la &quot;lectura continua&quot; (función de abajo) realiza lecturas periódicas del canal de</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">    entrada analógica y puede almacenar los valores para futuras lecturas. En otras palabras, se</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">    refiere a una operación de lectura de un canal de entrada analógica que se realiza de manera</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">    periódica y repetiva. El driver comienza a leer el valor del canal de entrada analógica de manera</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">    continua, sin parar hasta que se detenga explícitamente. La lectura continua se realiza a una</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">    frecuencia determinada, que se establece cuando se inicia la lectura continua utilizando la</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">    función AnalogStartContinuous. Por ejemplo, si se establece una frecuencia de 100 ms, el driver</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">    leerá el valor del canal de entrada analógica cada 100 ms. La función AnalogInputReadContinuous</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">    devuelve el último valor leído del canal de entrada analógica, que se ha almacenado en un buffer</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">    interno del driver. Esto significa que se puede obtener el valor actual del canal de entrada</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">    analógica en cualquier momento, sin esperar a que se complete una lectura individual. La lectura</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">    continua es útil en aplicaciones donde se requiere monitorear un valor analógico de manera</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">    constante, como en sistemas de control de procesos, monitoreo de sensores, etc.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">==================================================================================================*/</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#ga59d18db7ff84dc756b4a66f5331a23eb">AnalogStartContinuous</a>(<a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a> channel);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">//---Inicia la lectura continua de un canal de entrada analógica específico</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">//---Parámetro: Es el canal (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#gaea40f5dd5d020c0854734479d52458c2">AnalogStopContinuous</a>(<a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a> channel);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">//---Detiene la lectura continua de un canal de entrada analógica específico</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">//---Parámetro: Es el canal (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#ga042e3964ac18e816a5eb4dfca78bb223">AnalogInputReadContinuous</a>(<a class="code hl_typedef" href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a> channel, uint16_t *values);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">//---Lee el valor de un canal de entrada analógica específico en modo de lectura continua y devuelve el último</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">//   valor leído del canal de entrada analógica</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">//---Parámetros:</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">//---           &gt; El primer parámetro es el canal (CH0, CH1, CH2, CH3)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">//---           &gt; El segunto parámetro es el puntero a la variable donde se guardará el valor leído (debemos pasarlo por referencia en nuestro codigo)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___analog___i_o.html#gad3fea4064bfa31ae309d4da542347198">AnalogOutputWrite</a>(uint8_t value);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">//---Escribe un valor en la salida analógica</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">//---Parámetro: Es el valor a escribir, es decir, el valor que se desea escribir en la salida analógica</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">//              (valor digital de 0 a 255 en nuestro caso que se tiene un valor de 8 bits sin signo)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#endif </span><span class="comment">/* #ifndef ANALOG_IO_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">/*==================[end of file]============================================*/</span></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga042e3964ac18e816a5eb4dfca78bb223"><div class="ttname"><a href="group___analog___i_o.html#ga042e3964ac18e816a5eb4dfca78bb223">AnalogInputReadContinuous</a></div><div class="ttdeci">void AnalogInputReadContinuous(adc_ch_t channel, uint16_t *values)</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00155">analog_io_mcu.c:155</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga24ce5556aa4682468220b982f151cdfe"><div class="ttname"><a href="group___analog___i_o.html#ga24ce5556aa4682468220b982f151cdfe">AnalogInputInit</a></div><div class="ttdeci">void AnalogInputInit(analog_input_config_t *config)</div><div class="ttdoc">Analog input initialization.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00045">analog_io_mcu.c:45</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga3e4744e022398e776a8dbdd97903a629"><div class="ttname"><a href="group___analog___i_o.html#ga3e4744e022398e776a8dbdd97903a629">adc_mode_t</a></div><div class="ttdeci">enum adc_mode adc_mode_t</div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga4ebdf50515e5d73c58c24fd1491770dc"><div class="ttname"><a href="group___analog___i_o.html#ga4ebdf50515e5d73c58c24fd1491770dc">adc_ch</a></div><div class="ttdeci">adc_ch</div><div class="ttdoc">AD and DA Converter driver for the ESP-EDU Board.</div><div class="ttdef"><b>Definition</b> <a href="#l00052">analog_io_mcu.h:52</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga51acd785c14953090a3507d4fa8e5939"><div class="ttname"><a href="group___analog___i_o.html#ga51acd785c14953090a3507d4fa8e5939">adc_mode</a></div><div class="ttdeci">adc_mode</div><div class="ttdef"><b>Definition</b> <a href="#l00068">analog_io_mcu.h:68</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga59d18db7ff84dc756b4a66f5331a23eb"><div class="ttname"><a href="group___analog___i_o.html#ga59d18db7ff84dc756b4a66f5331a23eb">AnalogStartContinuous</a></div><div class="ttdeci">void AnalogStartContinuous(adc_ch_t channel)</div><div class="ttdoc">Start convertion for ADC module in continuous mode.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00147">analog_io_mcu.c:147</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gab57399e946247652a096a0e2d3a1b69a"><div class="ttname"><a href="group___analog___i_o.html#gab57399e946247652a096a0e2d3a1b69a">AnalogOutputInit</a></div><div class="ttdeci">void AnalogOutputInit(void)</div><div class="ttdoc">Analog output initialization (DAC)</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00120">analog_io_mcu.c:120</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gab5ae00a35744f407072230979e593fd9"><div class="ttname"><a href="group___analog___i_o.html#gab5ae00a35744f407072230979e593fd9">AnalogInputReadSingle</a></div><div class="ttdeci">void AnalogInputReadSingle(adc_ch_t channel, uint16_t *value)</div><div class="ttdoc">Read single channel.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00130">analog_io_mcu.c:130</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gac537c4efc9fd03387fe824872bae8830"><div class="ttname"><a href="group___analog___i_o.html#gac537c4efc9fd03387fe824872bae8830">adc_ch_t</a></div><div class="ttdeci">enum adc_ch adc_ch_t</div><div class="ttdoc">AD and DA Converter driver for the ESP-EDU Board.</div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gad3fea4064bfa31ae309d4da542347198"><div class="ttname"><a href="group___analog___i_o.html#gad3fea4064bfa31ae309d4da542347198">AnalogOutputWrite</a></div><div class="ttdeci">void AnalogOutputWrite(uint8_t value)</div><div class="ttdoc">Digital-to-Analog convert.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00159">analog_io_mcu.c:159</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gaea40f5dd5d020c0854734479d52458c2"><div class="ttname"><a href="group___analog___i_o.html#gaea40f5dd5d020c0854734479d52458c2">AnalogStopContinuous</a></div><div class="ttdeci">void AnalogStopContinuous(adc_ch_t channel)</div><div class="ttdoc">Stop convertion for ADC module.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00151">analog_io_mcu.c:151</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e"><div class="ttname"><a href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a></div><div class="ttdeci">@ CH1</div><div class="ttdef"><b>Definition</b> <a href="#l00054">analog_io_mcu.h:54</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga4ebdf50515e5d73c58c24fd1491770dca839bb189c047995024b04db6c0dbb29f"><div class="ttname"><a href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca839bb189c047995024b04db6c0dbb29f">CH0</a></div><div class="ttdeci">@ CH0</div><div class="ttdef"><b>Definition</b> <a href="#l00053">analog_io_mcu.h:53</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga4ebdf50515e5d73c58c24fd1491770dcaaee6d12bf63ae430250764aa97e9e429"><div class="ttname"><a href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dcaaee6d12bf63ae430250764aa97e9e429">CH3</a></div><div class="ttdeci">@ CH3</div><div class="ttdef"><b>Definition</b> <a href="#l00057">analog_io_mcu.h:56</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga4ebdf50515e5d73c58c24fd1491770dcae574b39c34bd88c27ea641014831e53a"><div class="ttname"><a href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dcae574b39c34bd88c27ea641014831e53a">CH2</a></div><div class="ttdeci">@ CH2</div><div class="ttdef"><b>Definition</b> <a href="#l00055">analog_io_mcu.h:55</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga51acd785c14953090a3507d4fa8e5939a2c63a9e4a7bd5a4da1cb97f40f1cb49d"><div class="ttname"><a href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a2c63a9e4a7bd5a4da1cb97f40f1cb49d">ADC_CONTINUOUS</a></div><div class="ttdeci">@ ADC_CONTINUOUS</div><div class="ttdef"><b>Definition</b> <a href="#l00070">analog_io_mcu.h:70</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4"><div class="ttname"><a href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4">ADC_SINGLE</a></div><div class="ttdeci">@ ADC_SINGLE</div><div class="ttdef"><b>Definition</b> <a href="#l00069">analog_io_mcu.h:69</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html"><div class="ttname"><a href="structanalog__input__config__t.html">analog_input_config_t</a></div><div class="ttdoc">Analog inputs config structure.</div><div class="ttdef"><b>Definition</b> <a href="#l00091">analog_io_mcu.h:91</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html_a16d10b35d778a5d4fdbda4d75981d310"><div class="ttname"><a href="structanalog__input__config__t.html#a16d10b35d778a5d4fdbda4d75981d310">analog_input_config_t::input</a></div><div class="ttdeci">adc_ch_t input</div><div class="ttdef"><b>Definition</b> <a href="#l00092">analog_io_mcu.h:92</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html_a25204106348e34dfe9da6ac6e61b08c8"><div class="ttname"><a href="structanalog__input__config__t.html#a25204106348e34dfe9da6ac6e61b08c8">analog_input_config_t::sample_frec</a></div><div class="ttdeci">uint16_t sample_frec</div><div class="ttdef"><b>Definition</b> <a href="#l00096">analog_io_mcu.h:96</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html_a56cce61871ae1c1c5317d84d747f87c1"><div class="ttname"><a href="structanalog__input__config__t.html#a56cce61871ae1c1c5317d84d747f87c1">analog_input_config_t::mode</a></div><div class="ttdeci">adc_mode_t mode</div><div class="ttdef"><b>Definition</b> <a href="#l00093">analog_io_mcu.h:93</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html_a672985730d2c0cf9105559adc9759a3a"><div class="ttname"><a href="structanalog__input__config__t.html#a672985730d2c0cf9105559adc9759a3a">analog_input_config_t::func_p</a></div><div class="ttdeci">void * func_p</div><div class="ttdef"><b>Definition</b> <a href="#l00094">analog_io_mcu.h:94</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html_aad5f5715cb799d57b86e98fe3bf701e1"><div class="ttname"><a href="structanalog__input__config__t.html#aad5f5715cb799d57b86e98fe3bf701e1">analog_input_config_t::param_p</a></div><div class="ttdeci">void * param_p</div><div class="ttdef"><b>Definition</b> <a href="#l00095">analog_io_mcu.h:95</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_4774754e228843183aac8de48667fdde.html">drivers</a></li><li class="navelem"><a class="el" href="dir_d160f35dc52f3817b5a745af8a8d0f15.html">microcontroller</a></li><li class="navelem"><a class="el" href="dir_49ebae24f0aefdd435b991e23c1be8be.html">inc</a></li><li class="navelem"><a class="el" href="analog__io__mcu_8h.html">analog_io_mcu.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>
